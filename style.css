@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('https://media.istockphoto.com/id/155380716/photo/commercial-jet-flying-over-clouds.jpg?s=612x612&w=0&k=20&c=idhnJ7ZdrLA1Dv5GO2R28A8WCx1SXCFVLu5_2cfdvXw=') no-repeat center top fixed;
+    background-size: cover; /* Ensures the image covers the viewport */
+    color: #333;
+}
+
+header {
+    background-color: #004080;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+header nav a {
+    color: white;
+    margin: 0 1rem;
+    text-decoration: none;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 2rem;
+}
+
+#overview, #destinations, #gallery, #support {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background-color: #e6f2ff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#overview h2, #destinations h2, #gallery h2, #support h2 {
+    color: #004080;
+}
+
+#destinations ul {
+    list-style-type: square;
+    padding-left: 1.5rem;
+}
+
+#gallery-container {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+#gallery-container img {
+    width: 200px;
+    height: 150px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #004080;
+    color: white;
+    margin-top: 2rem;
+}

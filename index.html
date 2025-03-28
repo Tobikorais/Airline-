@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tobiko Airlines</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Tobiko Airlines</h1>
+        <nav>
+            <a href="#about">About Us</a>
+            <a href="#flights">Flights</a>
+            <a href="#booking">Book a Flight</a>
+            <a href="#contact">Contact Us</a>
+        </nav>
+    </header>
+    <main>
+        <section id="about">
+            <h2>Experience the Sky Like Never Before with Tobiko Airlines</h2>
+            <p>Soar above the ordinary with our premium flying services! Whether you’re looking for breathtaking aerial tours, private charters, or professional aviation solutions, we guarantee safety, comfort, and an unforgettable experience.</p>
+            <ul>
+                <li>✔️ Luxury & Comfort – Fly in style with top-tier aircraft.</li>
+                <li>✔️ Safety First – Certified pilots and rigorous safety standards.</li>
+                <li>✔️ Custom Flights – Personalized routes and flexible scheduling.</li>
+                <li>✔️ Unmatched Views – Discover the world from a whole new perspective.</li>
+            </ul>
+            <p>Book your flight today and elevate your journey with us!</p>
+        </section>
+        <section id="flights">
+            <h2>Available Flights</h2>
+            <div id="flight-container"></div>
+        </section>
+        <section id="booking">
+            <h2>Book a Flight</h2>
+            <form id="booking-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="starting-station">Starting Station:</label>
+                <select id="starting-station" name="starting-station" required>
+                    <option value="">Select an Airport</option>
+                </select>
+                
+                <label for="destination">Destination:</label>
+                <select id="destination" name="destination" required>
+                    <option value="">Select an Airport</option>
+                </select>
+                
+                <label for="travel-date">Travel Date:</label>
+                <input type="date" id="travel-date" name="travel-date" required>
+                
+                <label for="departure-time">Departure Time:</label>
+                <input type="time" id="departure-time" name="departure-time" required>
+                
+                <label for="passengers">Number of Passengers:</label>
+                <input type="number" id="passengers" name="passengers" min="1" required>
+                
+                <label for="seat-preference">Seat Preference:</label>
+                <select id="seat-preference" name="seat-preference" required>
+                    <option value="">Select</option>
+                    <option value="window">Window</option>
+                    <option value="aisle">Aisle</option>
+                    <option value="middle">Middle</option>
+                </select>
+                
+                <label for="special-condition">Special Condition:</label>
+                <textarea id="special-condition" name="special-condition" rows="4" placeholder="Enter any special conditions here..."></textarea>
+                
+                <label for="payment-method">Payment Method:</label>
+                <select id="payment-method" name="payment-method" required>
+                    <option value="">Select</option>
+                    <option value="credit-card">Credit Card</option>
+                    <option value="debit-card">Debit Card</option>
+                    <option value="paypal">PayPal</option>
+                </select>
+                
+                <div id="card-details" style="display: none;">
+                    <label for="card-number">Card Number:</label>
+                    <input type="text" id="card-number" name="card-number" placeholder="1234 5678 9012 3456">
+                    
+                    <label for="expiry-date">Expiry Date:</label>
+                    <input type="month" id="expiry-date" name="expiry-date">
+                    
+                    <label for="cvv">CVV:</label>
+                    <input type="text" id="cvv" name="cvv" placeholder="123">
+                </div>
+                
+                <button type="submit">Book Now</button>
+            </form>
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or need assistance, feel free to reach out to us:</p>
+            <ul>
+                <li>Email: support@tobikoairlines.com</li>
+                <li>Phone: +25408288623</li>
+                <li>Address: Ngong Lane Plaza</li>
+            </ul>
+        </section>
+        <section id="services">
+            <h2>Our Services</h2>
+            <ul>
+                <li>In-flight entertainment with the latest movies and shows</li>
+                <li>Complimentary meals and beverages</li>
+                <li>Priority boarding for premium members</li>
+                <li>24/7 customer support</li>
+            </ul>
+        </section>
+        <section id="testimonials">
+            <h2>What Our Customers Say</h2>
+            <blockquote>
+                <p>"Tobiko Airlines made my travel experience seamless and enjoyable. Highly recommend!"</p>
+                <cite>- Luke Rono</cite>
+            </blockquote>
+            <blockquote>
+                <p>"The customer service was outstanding, and the flight was on time. Great job!"</p>
+                <cite>- Dylan Idrissa</cite>
+            </blockquote>
+        </section>
+        <section id="faq">
+            <h2>Frequently Asked Questions</h2>
+            <details>
+                <summary>What is the baggage allowance?</summary>
+                <p>Each passenger is allowed one carry-on bag and one checked bag. Additional baggage fees may apply.</p>
+            </details>
+            <details>
+                <summary>Can I change my flight after booking?</summary>
+                <p>Yes, you can change your flight up to 24 hours before departure. Fees may apply.</p>
+            </details>
+            <details>
+                <summary>How do I contact customer support?</summary>
+                <p>You can reach us via email at support@tobikoairlines.com or call us at +1-800-555-TOBI.</p>
+            </details>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Tobiko Airlines | All Rights Reserved</p>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
